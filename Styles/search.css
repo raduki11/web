@@ -17,9 +17,22 @@ textarea {
     width:300px;
 }
 
-.filter{
-    text-align: left;
+table{
+    background-color: white;
+    width: 100%;
+    font-size: 2.5rem;
+    border: 5px;
+    border-radius: 20px;
+    border-style: solid;
+    border-color: black;
+    padding: 20px;
+    text-align: center;
+    margin-top: 50px;
 }
+
+th,a{
+    margin-left: 40%;
+} 
 
 .image{
     display: block;
@@ -32,7 +45,7 @@ textarea {
 }
 
 a:link, a:visited, a:active{
-    color: white;
+    color: rgb(219, 23, 82);
 }
 
 a:hover{

@@ -4,9 +4,99 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Seller</title>
+    <link rel="stylesheet" href="Styles/sell_item.css">
+    <title>Document</title>
 </head>
+
 <body>
+    <div class = "header">
+        <img src="Images/logo.png" alt="E-commerce logo",width="300px" height="300px" class="image">
+    </div>
+
+    <table class="menu">
+        <thead>
+            <tr>
+                    <th class="menu_button">
+                        <a href="sell_item.html"> Sell Item </a>
+                    </th>
+                    <th class="menu_button">
+                      <a href="search.html"> Search / Filter </a>
+                    </th>
+                    <th class="menu_button">
+                        <a href="shopping_cart.html"> Shopping cart </a>
+                    </th>
+            </tr>
+        </thead>
+    </table>
+
+    <div id="header">
+        <h1>Add a new product to sell</h1>
+        <p>One man's trash is another man's treasure
+        </p>
+    </div>
+    <hr>
+    <div id="placement">
+        <div>
+        <h4>Choose the category that best befits your item</h4>
+        <table>
+            <tr>
+                <td><p style="padding-right: 1em;"> Category: </p></td>
+                <td>
+                    <select name="Categories" id="Categories">
+                    <option value="Choose">Choose</option>
+                    <option value="books">Books</option>
+                    <option value="films">Films</option>
+                    <option value="electronics">Electronics</option>
+                    <option value="furniture">Furniture</option>
+                    <option value="vehicles">Vehicles</option>
+                    <option value="toys">Toys</option>
+                    <option value="music">Music</option>
+                    <option value="other">Other</option>
+                    </select>
+                </td>
+            </tr>
+    </table></div>
+    <div>
+        <h3>Item information:</h3>
+    </div>
+    <div><table>
+        <tr>
+            <td>Name: </td>
+            <td><input type="text" placeholder="Enter Name"></td>
+        </tr>
+        <tr>
+            <td>Description:</td>
+            <td><textarea class="description" name="Description" id="Description" cols="30" rows="10" placeholder="e.g. Chicago red Jordan 1 in mint condition "></textarea></td>
+        </tr>
+        <tr>
+            <td>Quantity:</td>
+            <td><input type="text" placeholder="1-10"></td>
+        </tr>
+        <tr>
+            <td>Price per item:</td>
+            <td><input type="text" placeholder="in euros"></td>
+        </tr>
+        <tr>
+            <td>Location:</td>
+            <td><input type="text" placeholder="e.g. Amsterdam"></td>
+        </tr>
+        <tr><td>Zip code:</td>
+        <td><input type="text" placeholder="e.g. 1234 KK"></td></tr>
+        <tr>
+            <td>Shipping:</td>
+            </p> <td><input type="radio" name="Shipping" id="pickup">Pick up<input type="radio" name="Shipping" id="delivery">Delivery</td>
+        </tr>
+        <tr>
+            <td>Shipping costs:</td>
+            <td><input type="text"></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr><td><input type="submit" class="button"></td></tr>
+    </table>
+    </div>
+</div>
+
     
+
 </body>
 </html>

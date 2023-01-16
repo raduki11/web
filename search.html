@@ -9,69 +9,86 @@
 </head>
 <body>
     <div class = "header">
-        <img src="Images/logo.png" alt="E-commerce logo",width="250px" height="250px" class="image">
+            <img src="Images/logo.png" alt="E-commerce logo",width="250px" height="250px" class="image">
     </div>
 
+    <table>
+        <thead>
+            <tr>
+                    <th class="menu_button">
+                        <a href="sell_item.html"> Sell Item </a>
+                    </th>
+                    <th class="menu_button">
+                      <a href="search.html"> Search / Filter </a>
+                    </th>
+                    <th class="menu_button">
+                        <a href="shopping_cart.html"> Shopping cart </a>
+                    </th>
+            </tr>
+        </thead>
+    </table>
+
+    
     <div class="form">
-    <h1>Search an item</h1>
-    <hr>
+        <h1>Search an item</h1>
+        <hr>
 
-    <div class="filter">
-        <p>Search by name</p>
-            <input type="text" name="itemName" placeholder="Name of item:"></td>
-    </div>
-    <hr>
+        <div class="filter">
+            <p>Search by name:</p>
+                <input type="text" name="itemName" placeholder="Name of item:"></td>
+        </div>
+        <hr>
 
-    <div class="filter">
-        <p>
-            Supplied by:
-        </p>
-            <input type="radio" name="Supplier" value="1">Supplier 1
-            <input type="radio" name="Supplier" value="2">Supplier 2
-            <input type="radio" name="Supplier" value="3">Supplier 3
-    </div>
-    <hr>
+        <div class="filter">
+            <p>
+                Supplied by:
+            </p>
+                <input type="radio" name="Supplier" value="1">Supplier 1
+                <input type="radio" name="Supplier" value="2">Supplier 2
+                <input type="radio" name="Supplier" value="3">Supplier 3
+        </div>
+        <hr>
 
-    <div class="filter">
-        <p>Category:</p>
-        <select name="categories" id="">
-            <option value="">select</option>
-            <option value="Books">Books</option>
-            <option value="Movies">Movies</option>
-            <option value="Clothes">Clothes</option>
-            <option value="Electronics">Electronics</option>
-            <option value="Sport items">Sport items</option>
-            <option value="other">other</option>
-        </select>
-    </div>
-    <hr>
+        <div class="filter">
+            <p>Category:</p>
+            <select name="categories" id="">
+                <option value="">select</option>
+                <option value="Books">Books</option>
+                <option value="Movies">Movies</option>
+                <option value="Clothes">Clothes</option>
+                <option value="Electronics">Electronics</option>
+                <option value="Sport items">Sport items</option>
+                <option value="other">other</option>
+            </select>
+        </div>
+        <hr>
 
-    <div class="filter">
-        <p>
-            Price range:
-        </p>
-        0 <input type="range" name="movie-rating" min="0" max="10000" step="1"> 10000$
-    </div>
-    <hr>
+        <div class="filter">
+            <p>
+                Price range:
+            </p>
+            0 <input type="range" name="movie-rating" min="0" max="10000" step="1"> 10000$
+        </div>
+        <hr>
 
-    <div class="filter">
-        <p>
-            Review rating:
-        </p>
-            <input type="radio" name="any" value="any">any
-            <input type="radio" name="1+" value="1+">1+
-            <input type="radio" name="2+" value="2+">2+
-            <input type="radio" name="3+" value="3+">3+
-            <input type="radio" name="4+" value="4+">4+
-            <input type="radio" name="5" value="5">5
-    </div>
-    <hr>
+        <div class="filter">
+            <p>
+                Review rating:
+            </p>
+                <input type="radio" name="any" value="any">any
+                <input type="radio" name="1+" value="1+">1+
+                <input type="radio" name="2+" value="2+">2+
+                <input type="radio" name="3+" value="3+">3+
+                <input type="radio" name="4+" value="4+">4+
+                <input type="radio" name="5" value="5">5
+        </div>
+        <hr>
 
-    <div>
-        <form>
-            <button type="submit">Search</button>
-        </form>
-    </div>
+        <div>
+            <form>
+                <button type="submit">Search</button>
+            </form>
+        </div>
     </div>
 </body>
 </html>
