@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="Styles/login_register.css">
+
+    <style>
+        .form {
+            color: white;
+            text-align: center;
+        }
+
+        body{
+            background: linear-gradient(90deg, #db1a2a, rgb(219, 23, 82));
+        }
+        textarea {
+            resize: none;
+            height: 150px;
+            width:300px;
+        }
+
+        table{
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .image{
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .button{
+            align-self: center;
+        }
+
+        a:link, a:visited, a:active{
+            color: white;
+        }
+
+        a:hover{
+            color: black;
+        }
+
+    </style>
+</head>
+<body>
+    <div class = "header">
+        <img src="Images/logo.png" alt="E-commerce logo",width="250px" height="250px" class="image">
+    </div>
+    <div class="form">
+    <h1>Create a New Account</h1>
+    <p>Register by filling in your credentials below.</p>
+    <hr>
+    <p style="margin-top: 50px; text-align: left;" ></p>
+    <table>
+        <tr>
+            <td>First Name:</td>
+            <td><input type="text" name="firstName" placeholder="Enter your first name"></td>
+            <td style="padding-left: 5em;">Address:</td>
+            <td><input type="text" placeholder="Example Street 12"></td>
+        </tr>
+        <tr>
+            <td>Last Name:</td>
+            <td><input type="text" name="lastName" placeholder="Enter your surname"></td>
+            <td style="padding-left: 5em;">Country:</td>
+            <td><input type="text" name="country" placeholder="e.g. Netherlands"></td>
+        </tr>
+        <tr>
+            <td>Phone number:</td>
+            <td><input type="text" name="phoneNumber" placeholder="Enter your phone number"></td>
+            <td style="padding-left: 5em;">ZIP code:</td>
+            <td><input type="text" name="zip" placeholder="1234 EX"></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>Language:</td>
+            <td><select name="languages" id="">
+                <option value=""></option>
+                <option value="Dutch">Nederlands</option>
+                <option value="English">English</option>
+                <option value="German">Deutsch</option>
+                <option value="Indonesian">Bahasa Indonesia</option>
+                <option value="French">Français</option>
+            </select></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>Gender:</td>
+            <td><input type="radio" name="Gender" value="male">Male</td>
+            <td><input type="radio" name="Gender" value="female">Female</td>
+            <td><input type="radio" name="Gender" value="Other">Other</td>
+        </tr>
+        <tr><td><br></td></tr>
+        </table>
+
+        <table><tr>
+            <td style="padding-right: 27px;">Description:</td>
+            <td><textarea name="" id="" cols="30" rows="10"></textarea></td>
+        </tr></table>
+            
+        <table>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>Email:</td>
+            <td><input type="text" name="email" placeholder="example@mail.com"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+            <td><input type="password" name="password" id="password" placeholder="Enter password" ></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td>Confirm Password:</td>
+            <td><input type="password" name="password" id="password" placeholder="Enter password"></td>
+        </tr>
+        <tr><td><br></td></tr>
+        <tr><td><br></td></tr>
+        <tr>
+            <td class = "button">
+                <form action="index.html">
+                    <button type="submit">Register</button>
+                </form>
+            </td>
+        </tr>
+    </table>
+    </div>
+</body>
+</html>
